@@ -4,7 +4,7 @@ from .models import Advertisement
 
 # Create your views here.
 def index(request):
-    advertisements = Advertisement.objects.all()
+    advertisement = Advertisement.objects.all()
     context = {'advertisement': advertisement}
     return render(request, 'index.html', context)
 
